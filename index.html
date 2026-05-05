@@ -76,6 +76,72 @@
     footer a:hover {
       text-decoration: underline;
     }
+    .links {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #0969da;
+      text-decoration: none;
+      border: 1px solid #0969da;
+      border-radius: 6px;
+      padding: 3px 10px;
+    }
+    .links a:hover {
+      background: #ddf4ff;
+      text-decoration: none;
+    }
+    h2 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 0.3em;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .contribute-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 560px) {
+      .contribute-grid { grid-template-columns: 1fr; }
+    }
+    .contribute-card {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 16px 20px;
+    }
+    .contribute-card h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+    .contribute-card ul {
+      margin: 0;
+      padding-left: 18px;
+      list-style: disc;
+    }
+    .contribute-card ul li {
+      background: none;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+    .contribute-card ul li a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #0969da;
+      text-decoration: none;
+    }
+    .contribute-card ul li a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -91,6 +157,10 @@
         <span class="topic">optimization-problems</span>
         <span class="topic">black-box-optimization</span>
       </div>
+      <div class="links">
+        <a href="https://github.com/OpenOptimizationOrg/OPL">GitHub Repository</a>
+        <a href="https://openoptimizationorg.github.io/OPL/">GitHub Pages</a>
+      </div>
     </li>
     <li>
       <a href="https://github.com/OpenOptimizationOrg/OFL">OFL – Optimisation Feature Library</a>
@@ -100,12 +170,33 @@
         <span class="topic">black-box-optimization</span>
         <span class="topic">optimization</span>
       </div>
+      <div class="links">
+        <a href="https://github.com/OpenOptimizationOrg/OFL">GitHub Repository</a>
+        <a href="https://openoptimizationorg.github.io/OFL/">GitHub Pages</a>
+      </div>
     </li>
     <li>
       <a href="https://github.com/OpenOptimizationOrg/Overview">Overview</a>
       <p>Overview page of the OpenOptimization Organization (this page).</p>
     </li>
   </ul>
+
+  <h2>Contribute</h2>
+  <div class="contribute-grid">
+    <div class="contribute-card">
+      <h3>OPL – Optimisation Problem Library</h3>
+      <ul>
+        <li><a href="https://github.com/OpenOptimizationOrg/OPL/issues">Issues &amp; Feature Requests</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSehQp24AuFAH2j9jizDhq8K_BYgNGMKXWTMu6s-2RwEJrK59Q/viewform?usp=sharing">Submit a New Problem (Google Form)</a></li>
+      </ul>
+    </div>
+    <div class="contribute-card">
+      <h3>OFL – Optimisation Feature Library</h3>
+      <ul>
+        <li><a href="https://github.com/OpenOptimizationOrg/OFL/issues">Issues &amp; Feature Requests</a></li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
     <a href="https://github.com/OpenOptimizationOrg">OpenOptimizationOrg on GitHub</a>
