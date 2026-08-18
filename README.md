@@ -1,5 +1,5 @@
-# Optimization * Libraries
-This page gives a basic overview of the repositories contained in the OpenOptimization Organization, as part of the Optimization * Libraries (O*L) project
+# Optimization * Library
+This page gives a basic overview of the repositories contained in the OpenOptimization Organization, as part of the Optimization * Library (O*L) project
 The website is hosted here: https://openoptimizationorg.github.io/Overview/
 
 ## Links:
